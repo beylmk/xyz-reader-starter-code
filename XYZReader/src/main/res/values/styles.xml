@@ -17,12 +17,13 @@
 
 <resources>
 
-    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Bacon" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
 
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/holo_purple</item>
     </style>
+
 
 </resources>

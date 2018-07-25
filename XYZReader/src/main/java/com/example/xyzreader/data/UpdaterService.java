@@ -77,6 +77,7 @@ public class UpdaterService extends IntentService {
             getContentResolver().applyBatch(ItemsContract.CONTENT_AUTHORITY, cpo);
 
         } catch (JSONException | RemoteException | OperationApplicationException e) {
+            //TODO display snackbar
             Log.e(TAG, "Error updating content.", e);
         }
 
