@@ -8,25 +8,27 @@
             android:id="@+id/toolbar_container"
             android:layout_width="match_parent"
             android:layout_height="168dp"
-            android:background="?colorPrimary">
+            android:theme="@style/Theme.Maddie"
+            android:background="@color/theme_accent"
+            >
 
         <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/collapsing_toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:collapsedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
-                app:expandedTitleTextAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
                 app:expandedTitleMarginStart="72dp"
                 android:layout_marginBottom="10dp"
+                app:contentScrim="@color/theme_accent"
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="match_parent"
-                    android:layout_height="?actionBarSize"
-                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-                    android:contentDescription="@string/app_name"
-                    app:layout_collapseMode="pin" />
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:navigationIcon="@drawable/logo"
+                android:contentDescription="@string/app_name"
+                app:layout_collapseMode="pin"
+                />
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
